@@ -33,7 +33,7 @@ body{
     justify-content: center;
     background-color: #B39262;
     color: white;
-    border: solid 3px #000000;
+    border: solid 2px #000000;
 }
 
 .topnav a:hover{
@@ -66,4 +66,97 @@ body{
 #logonav{
     background-color: none;
     text-decoration: none;
+}
+
+.heroimg1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/food_prep2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border: 0.1px solid black;
+    padding-top: 100px;
+}
+
+.herotext1{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
+}
+
+.heroimg2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/students4.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border: 0.1px solid black;
+    padding-top: 100px;
+}
+
+.herotext2{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
+}
+.heroimg3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/corn_fritters.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border: 0.1px solid black;
+    padding-top: 100px;
+}
+
+.herotext3{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
+}
+.heroimg4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/Student chefs prepar.png');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border: 0.1px solid black;
+    padding-top: 100px;
+}
+
+.herotext4{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
+}
+
+.heroimg5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/student1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border: 0.1px solid black;
+    padding-top: 100px;
+}
+
+.herotext5{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
 }
