@@ -3,34 +3,43 @@ body{
     padding: 0;
     background-color: #E1D7C4;
     overflow-y:scroll;
-    overflow-x:hidden;;
+    overflow-x:hidden;
+}
+
+.body1{
+    background-color: rgba(0, 0, 0, 0.8); /* Black with 50% opacity */
+}
+
+p{
+    font-family: 'Trebuchet MS';
 }
 
 .topnav{
     display: flex;
     justify-content: space-between;
-    padding-left: 10px;
     align-items: center;
     background-color: #E1D7C4;   
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
     position: fixed;
     color: #000000;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8),
-                0 0 20px rgba(255, 255, 255, 0.6),
-                0 0 30px rgba(255, 255, 255, 0.2);  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1),
+                0 0 20px rgba(171, 171, 171, 0.6),
+                0 0 30px rgba(0, 0, 0, 0.5);  
     font-family: 'Iosevka Charon';
+    height: 100px;
 }
 
 .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
     display:flex;
     text-align: center;
-    padding: 14px 80px;
+    padding: 20px 80px;
+    height: 25px;    
+    text-align: center;
     text-decoration: none;
-    font-size: 20px; 
+    font-size: 24px; 
     justify-content: center;
+    align-items: center;
     background-color: #B39262;
     color: white;
     border: solid 2px #000000;
@@ -39,6 +48,8 @@ body{
 .topnav a:hover{
     background-color: #FFFFFF;
     color: #B39262;
+    transition-duration: 0.2s;
+    transform: scale(1.05);
 }
 
  .topnav a.activepage{
@@ -58,24 +69,45 @@ body{
     justify-content: baseline;
     align-items: center;
     width: auto;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
     background-color: none;
-
 }
 
-#logonav{
+#logo2{
+    display: block;
+    width: auto;
+    height: 100px;
+    justify-content: baseline;
+    align-items: center;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
     background-color: none;
-    text-decoration: none;
+}
+
+.oscname{
+    font-size: 24px;
+    font-family: 'Cambria';
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+
+
+
 }
 
 .heroimg1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/food_prep2.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 350px;
-    width: 100%;
-    border: 0.1px solid black;
-    padding-top: 100px;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/Chef cooking at stov.png');
+  background-size: cover;
+  background-position: center;
+  margin: 0 0;
+  padding: 78px 0px;
+  width: 100%;
 }
 
 .herotext1{
@@ -159,4 +191,40 @@ body{
     padding-top: 50px;
     font-size: 2rem;
     font-family: 'Cambria';
+}
+
+.herobuttonsdiv {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.herobutton {
+  padding: 12px 24px;
+  border: 2px solid black;
+  background-color: #B39262;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.herobutton:hover {
+  background-color: white;
+  color: #B39262;
+  transform: scale(1.10);
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    height: 90px;
+    width: 100%;
+    font-family: 'Iosevka Charon';
 }
