@@ -4,10 +4,6 @@ body{
     background-color: #E1D7C4;
 }
 
-.body1{
-    background-color: rgba(0, 0, 0, 0.8); /* Black with 50% opacity */
-}
-
 p{
     font-family: 'Trebuchet MS';
 }
@@ -25,15 +21,16 @@ p{
                 0 0 30px rgba(0, 0, 0, 0.5);  
     font-family: 'Iosevka Charon';
     height: 100px;
+    flex-wrap: wrap;
 }
 
 .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
     display:flex;
-    padding: 20px 80px;
+    padding: 14px 50px;
     height: 25px;    
     text-align: center;
     text-decoration: none;
-    font-size: 24px; 
+    font-size: 24px;
     justify-content: center;
     align-items: center;
     background-color: #B39262;
@@ -64,8 +61,7 @@ p{
     height: 90px;
     justify-content: baseline;
     align-items: center;
-    width: auto;
-    padding-top: 10px;
+    padding-top: px;
     padding-bottom: 10px;
     padding-left: 25px;
     background-color: none;
@@ -77,8 +73,7 @@ p{
     height: 100px;
     justify-content: baseline;
     align-items: center;
-    width: auto;
-    padding-top: 10px;
+    padding-top: px;
     padding-bottom: 10px;
     padding-right: 25px;
     background-color: none;
@@ -129,6 +124,7 @@ p{
     font-size: 2rem;
     font-family: 'Cambria';
 }
+
 .heroimg3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/corn_fritters.jpeg');
     background-size: cover;
@@ -216,4 +212,27 @@ p{
     height: 90px;
     width: 100%;
     font-family: 'Iosevka Charon';
+}
+
+@media screen and (min-resolution: 1.8dppx) {
+  .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-resolution: 1.8dppx) {
+    #logo{
+        height: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+    }
+    
+    #logo2{
+        height: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+    }
 }
