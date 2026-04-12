@@ -1,1 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Signika:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trebuchet+MS&display=swap');
 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E1D7C4;
+}
+
+p{
+    font-family: 'Trebuchet MS';
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E1D7C4;   
+    position: fixed;
+    color: #000000;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1),
+                0 0 20px rgba(171, 171, 171, 0.6),
+                0 0 30px rgba(0, 0, 0, 0.5);  
+    font-family: 'Iosevka Charon';
+    height: 100px;
+    flex-wrap: wrap;
+}
+
+.topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+    display:flex;
+    padding: 16px 60px;
+    height: 25px;    
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    background-color: #B39262;
+    color: white;
+    border: solid 2px #000000;
+}
+
+.topnav a:hover{
+    background-color: #FFFFFF;
+    color: #B39262;
+    transition-duration: 0.2s;
+    transform: scale(1.05);
+}
+
+ .topnav a.activepage{
+    background-color: #14205c5c;
+    color: #FFFFFF;
+}
+
+.topnav a.activepage:hover{
+    background-color: #FFFFFF;
+    color: #B39262;
+}
+
+#logo{
+    display: block;
+    width: auto;
+    height: 90px;
+    justify-content: baseline;
+    align-items: center;
+    padding-top: px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    background-color: none;
+}
+
+#logo2{
+    display: block;
+    width: auto;
+    height: 100px;
+    justify-content: baseline;
+    align-items: center;
+    padding-top: px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    background-color: none;
+}
+
+.oscname{
+    font-size: 24px;
+    font-family: 'Cambria';
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.heroimg1{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/Chef cooking at stov.png');
+  background-size: cover;
+  background-position: center;
+  margin: 0 0;
+  padding: 78px 0px;
+  width: 100%;
+}
+
+.herotext1{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
+}
+
+.heroimg2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/students4.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 0;
+    padding: 78px 0px;
+    width: 100%;
+}
+
+.herotext2{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
+}
+
+.heroimg3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/corn_fritters.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 0;
+    padding: 78px 0px;
+    width: 100%;
+}
+
+.herotext3{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
+}
+.heroimg4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/Student chefs prepar.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0 0;
+    padding: 78px 0px;
+    width: 100%;
+}
+
+.herotext4{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
+}
+
+.heroimg5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/student1.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 0;
+    padding: 78px 0px;
+    width: 100%;
+}
+
+.herotext5{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
+}
+
+.herobuttonsdiv {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.herobutton {
+  padding: 12px 24px;
+  border: 2px solid black;
+  background-color: #B39262;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.herobutton:hover {
+  background-color: white;
+  color: #B39262;
+  transform: scale(1.10);
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    height: 90px;
+    width: 100%;
+    font-family: 'Iosevka Charon';
+}
+
+@media screen and (min-resolution: 1.8dppx) {
+  .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+    padding: 15px 40px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-resolution: 1.8dppx) {
+    #logo{
+        height: 70px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+    }
+    
+    #logo2{
+        height: 70px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+    }
+}
+
+.aboutusheading{
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 40px;
+    font-family: 'Iosevka Charon';
+    background-color: #4D444B;
+    color: #FFFFFF;
+}
+
+#ourpurposeheading{
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 40px;
+    font-family: 'Iosevka Charon';
+    background-color: #1A2640;
+    color: #FFFFFF;
+}
+
+.aboutusandourpurpose{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.aboutusandourpurposep{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 17px;
+    padding-left: 80px;
+    padding-right: 80px;
+    word-spacing: 3px;
+    line-height: 40px;
+    color: #523b11;
+}
+
+.aboutusandourpurposeimg{
+    width: 500px;
+    height: auto;
+    border-radius: 2px;
+    padding: 10px;
+    border: 5px solid #000000; 
+    flex-wrap: wrap;
+}
+
+@media screen and (min-resolution: 1.8dppx) {
+    .aboutusandourpurpose{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-resolution: 1.4dppx) {
+    .aboutusandourpurposep{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-resolution: 1.4dppx) {
+    .aboutusandourpurposeimg{
+        width: 400px;
+    }
+}
+
+.valuesheading{
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 40px;
+    background-color: #4D444B;
+    color: #FFFFFF;
+    font-family: 'Iosevka Charon';
+}
+
+.values{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.valuesimages{
+    display: block;
+    width: 200px;
+    height: auto;
+    border: 4px solid #000000;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#valuesp{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 17px;
+    padding-left: 80px;
+    padding-right: 80px;
+    word-spacing: 3px;
+    line-height: 40px;
+    color: #523b11;
+}
+
+@media screen and (min-resolution: 1.5dppx) {
+    .valuesimages{
+        width: 150px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-resolution: 1.8dppx) {
+    .values{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
