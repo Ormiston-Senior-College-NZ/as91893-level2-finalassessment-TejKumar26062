@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
+<link rel="icon" type="icon" href="images/logo.png">
 <link rel="stylesheet" href="style.css">	
-    <title>Reservations - OSC Dining 101</title>
+<title>Reservations - OSC Dining 101</title>
 </head>
 <body>
 <div class="topnav">
@@ -30,7 +31,22 @@
         <h3>OSC Dining 101</h3>
         </div>
     </div>
+    <div class="footer1">
+<footer>
+<p>© 2026 OSC Dining. All rights reserved.</p>
+</footer>
+</div> 
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form> 
   </body>
 </html>
