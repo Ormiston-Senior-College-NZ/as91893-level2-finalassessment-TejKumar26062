@@ -344,7 +344,7 @@ p{
 }
 
 .valuesimages{
-    display: block;
+    display: flex;
     width: 200px;
     height: auto;
     border: 4px solid #000000;
