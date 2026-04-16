@@ -31,11 +31,7 @@
         <h3>OSC Dining 101</h3>
         </div>
     </div>
-    <div class="footer1">
-<footer>
-<p>© 2026 OSC Dining. All rights reserved.</p>
-</footer>
-</div> 
+
     <form action="submit_form.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -47,6 +43,20 @@
         <textarea id="message" name="message" rows="5" required></textarea>
 
         <button type="submit">Submit</button>
-    </form> 
+
+ </form>
+  <a href="#logo" onclick="topFunction()" alt="Back to Top">
+  <img src="images/arrow(2).png" alt="Back to Top Arrow" class="backtotoparrow">
+  </a>
+<script>
+  function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+</script> 
+    <div class="footer1">
+<footer>
+<p>© 2026 OSC Dining. All rights reserved.</p>
+</footer>
+</div> 
   </body>
 </html>
