@@ -32,19 +32,71 @@
         </div>
     </div>
 
-    <form action="submit_form.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+<div class="reservation-container">
+    <h2 class="resheading">Book Your Visit</h2>
+    <form action="#" method="POST">
+        <label for="full_name">Full Name</label>
+        <input type="text" id="full_name" name="full_name" placeholder="Enter your name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="res_date">Date</label>
+          <select id="res_date" name="res_date">
+            <option value="03-04-2026">03-04-2026</option>
+            <option value="03-07-2026">03-07-2026</option>
+            <option value="25-08-2026">25-08-2026</option>
+            <option value="18-12-2026">18-12-2026</option>
+          </select>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="guests">Number of Guests</label>
+        <select id="guests" name="guests">
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6+">6+ People</option>
+        </select>
 
-        <button type="submit">Submit</button>
+        <label for="res_time">Time</label>
+        <select id="res_time" name="res_time" required>
+          <option>18:00</option>
+          <option>18:45</option <a href="#" class="btn btn-primary active" role="button"></a>>
+          <option>19:30</option>
+          <option>20:15</option>
+          <option>21:00</option>
+        </select>        
+        
+        <label for="contactnumber">Contact Number</label>
+        <input type="tel" id="contactnumber" name="contactnumber" placeholder="Enter your contact number" required pattern="[0-9]{10}{+64}">
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
- </form>
+        <div class="dietary-group">
+        <label>Do you have dietary restrictions?</label><br>
+
+        <label>
+        <input type="radio" name="dietary" value="Yes" onclick="toggleDietary(true)" required>
+        Yes
+        </label>
+
+        <label>
+        <input type="radio" name="dietary" value="No" onclick="toggleDietary(false)">
+        No
+        </label>
+        </div><br>
+
+<input type="text" id="dietaryBox" placeholder="Please specify your dietary restrictions" style="display:none;" required>
+
+<script>
+function toggleDietary(show) {
+  document.getElementById("dietaryBox").style.display = show ? "block" : "none";
+}
+</script>
+
+        <button type="submit">Submit Reservation</button>
+    </form>
+</div>
+
   <a href="#logo" onclick="topFunction()" alt="Back to Top">
   <img src="images/arrow(2).png" alt="Back to Top Arrow" class="backtotoparrow">
   </a>
