@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Signika:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cambria&display=swap');
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Trebuchet+MS&display=swap');
 
+/* General Styling */
 html{
     scroll-behavior: smooth;
 }
@@ -10,12 +11,14 @@ body{
     margin: 0;
     padding: 0;
     background-color: #E1D7C4;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
-p{
-    font-family: 'Trebuchet MS';
+h1, h2, h3, .topnav, .menucard h3 {
+    font-family: 'Iosevka Charon', serif;
 }
 
+/* Back to Top Arrow Styling */
 .backtotoparrow{
     position: fixed;
     bottom: 30px;
@@ -27,6 +30,7 @@ p{
     cursor: pointer;
 }
 
+/* Back to Top Arrow Styling - Changes for smaller devices*/
 @media screen and (min-resolution: 1.5dppx) {
     .backtotoparrow{
         height: 60px;
@@ -39,6 +43,13 @@ p{
     }
 }
 
+@media screen and (min-resolution: 2.5dppx) {
+    .backtotoparrow{
+        height: 40px;
+    }
+}
+
+/* All Main Heading Styling */
 .aboutusheading, #ourpurposeheading, .valuesheading, .menuheading, .openinghoursheading, .contactusheading, .allergensheading, .reservationsheading{
     text-align: center;
     padding-top: 8px;
@@ -48,9 +59,10 @@ p{
     font-size: 40px;
     background-color: #4D444B;
     color: #FFFFFF;
-    font-family: 'Iosevka Charon';
+    font-family: 'Iosevka Charon', serif;
 }
 
+/* Most <p> Styling */
 .aboutusandourpurposep, #valuesp, .contactusp, .allerginsp, .openinghoursp{
     display: grid;
     align-items: center;
@@ -64,6 +76,7 @@ p{
     color: #523b11;
 }
 
+/* Navigation Bar Styling */
 .topnav{
     display: flex;
     justify-content: space-between;
@@ -80,7 +93,10 @@ p{
     z-index: 1;
 }
 
-.topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+.topnav a[href="aboutus.html"], 
+.topnav a[href="menu.html"], 
+.topnav a[href="reservations.html"], 
+.topnav a[href="contactus.html"]{
     display:flex;
     padding: 16px 60px;
     height: 25px;    
@@ -111,6 +127,7 @@ p{
     color: #B39262;
 }
 
+/* Navigation Bar Styling - Logos*/
 #logo{
     display: block;
     width: auto;
@@ -135,16 +152,7 @@ p{
     background-color: none;
 }
 
-.oscname{
-    font-size: 24px;
-    font-family: 'Cambria';
-    text-align: center;
-    align-content: center;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-}
-
+/* All Navigation Bar Styling - Changes for smaller devices*/
 @media screen and (min-resolution: 1.8dppx) {
   .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
     padding: 15px 40px;
@@ -169,6 +177,13 @@ p{
   .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
     padding: 14px 10px;
     font-size: 20px;
+  }
+}
+
+@media screen and (min-resolution: 3.5dppx) {
+  .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+    padding: 14px 8px;
+    font-size: 18px;
   }
 }
 
@@ -220,6 +235,23 @@ p{
     }
 }
 
+@media screen and (min-resolution: 3.5dppx) {
+    #logo{
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 8px;
+    }
+    
+    #logo2{
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 8px;
+    }
+}
+
+/* Hero Images Styling*/
 .heroimg1{
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/Chef cooking at stov.png');
   background-size: cover;
@@ -227,15 +259,7 @@ p{
   margin: 0 0;
   padding: 78px 0px;
   width: 100%;
-}
-
-.herotext1{
-    text-align: center;
-    align-content: center;
-    color: white;
-    padding-top: 50px;
-    font-size: 2rem;
-    font-family: 'Cambria';
+  height: 500px;
 }
 
 .heroimg2{
@@ -247,15 +271,6 @@ p{
     width: 100%;
 }
 
-.herotext2{
-    text-align: center;
-    align-content: center;
-    color: white;
-    padding-top: 50px;
-    font-size: 2rem;
-    font-family: 'Cambria';
-}
-
 .heroimg3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/corn_fritters.jpeg');
     background-size: cover;
@@ -265,14 +280,6 @@ p{
     width: 100%;
 }
 
-.herotext3{
-    text-align: center;
-    align-content: center;
-    color: white;
-    padding-top: 50px;
-    font-size: 2rem;
-    font-family: 'Cambria';
-}
 .heroimg4{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/Student chefs prepar.png');
     background-size: cover;
@@ -280,15 +287,6 @@ p{
     margin: 0 0;
     padding: 78px 0px;
     width: 100%;
-}
-
-.herotext4{
-    text-align: center;
-    align-content: center;
-    color: white;
-    padding-top: 50px;
-    font-size: 2rem;
-    font-family: 'Cambria';
 }
 
 .heroimg5{
@@ -300,15 +298,6 @@ p{
     width: 100%;
 }
 
-.herotext5{
-    text-align: center;
-    align-content: center;
-    color: white;
-    padding-top: 50px;
-    font-size: 2rem;
-    font-family: 'Cambria';
-}
-
 .heroimg6{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/reservationcompleteimg.png');
     background-size: cover;
@@ -318,15 +307,16 @@ p{
     width: 100%;
 }
 
-.herotext6{
+/* Hero Text Styling*/
+.herotext1, .herotext2, .herotext3, .herotext4, .herotext5, .herotext6{
     text-align: center;
     align-content: center;
     color: white;
     padding-top: 50px;
     font-size: 2rem;
-    font-family: 'Cambria';
 }
 
+/* Index.html Buttons Styling*/
 .herobuttonsdiv {
   display: flex;
   justify-content: center;
@@ -351,7 +341,8 @@ p{
   transform: scale(1.10);
 }
 
-.footer1{
+/* Footer Styling*/
+.footer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,6 +354,7 @@ p{
     font-family: 'Iosevka Charon';
 }
 
+/* Aboutus.html Page - About Us and Our Purpose Styling*/
 .aboutusandourpurpose{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -382,6 +374,7 @@ p{
     flex-wrap: wrap;
 }
 
+/*  Aboutus.html Page - About Us and Our Purpose - Changes for smaller devices*/
 @media screen and (min-resolution: 1.8dppx) {
     .aboutusandourpurpose{
         grid-template-columns: 1fr;
@@ -400,6 +393,7 @@ p{
     }
 }
 
+/* Aboutus.html Page - Values Styling*/
 .values{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -417,6 +411,7 @@ p{
     margin-right: 100px;
 }
 
+/*  Aboutus.html Page - Values - Changes for smaller devices*/
 @media screen and (min-resolution: 1.5dppx) {
     .valuesimages{
         width: 150px;
@@ -446,7 +441,7 @@ p{
     }
 }
 
-
+/*  Menu.html Page Styling*/
 .menuselection {
     display: flex;
     justify-content: center;
@@ -541,13 +536,7 @@ p{
     transform: scale(1.03);
 }
 
-@media screen and (min-resolution: 1.5dppx) {
-    .menugrid{
-        flex-wrap: wrap;
-        justify-items: center;
-    }
-}
-
+/*  reservations.html Page Styling*/
 .reservation-container {
     max-width: 400px;
     margin: 50px auto;
@@ -570,8 +559,6 @@ p{
     padding: 10px;
     margin: 0 auto;
     max-width: 600px;
-    font-family: 'Cambria';
-
 }
 
 .resheading {
@@ -626,7 +613,7 @@ input, select {
   margin-right: 6px;
 }
 
-
+/* contactus.html Page - Opening Hours Styling*/
 .openinghours{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -654,12 +641,14 @@ input, select {
     font-family: 'Trebuchet ms';
 }
 
+/* contactus.html Page - Opening Hours - Changes for smaller devices*/
 @media screen and (min-resolution: 1.8dppx) {
     .openinghours{
         grid-template-columns: 1fr;
     }
 }
 
+/* contactus.html - Contact us Page Styling*/
 .contactus{
     display: flex;
     grid-template-columns: 1fr 1fr 1fr;
@@ -691,21 +680,6 @@ input, select {
     font-family: 'Iosevka Charon';
 }
 
-.googlemaps{
-    display:flex;
-    align-content: center;
-    justify-content: center;
-    padding: 15px 0px;
-    width: 100%;
-}
-
-@media screen and (min-resolution: 1.8dppx) {
-    .contactus{ 
-        flex-wrap: wrap;
-        justify-items: center;
-    }
-}
-
 .contactusdetails strong{
     margin-bottom: 8px;
     font-size: 22px;
@@ -721,6 +695,24 @@ input, select {
     text-decoration: none;
 }
 
+/* contactus.html Page - Contact Us - Changes for smaller devices*/
+@media screen and (min-resolution: 1.8dppx) {
+    .contactus{ 
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+}
+
+/* contactus.html Page - Google Maps Styling*/
+.googlemaps{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    padding: 15px 0px;
+    width: 100%;
+}
+
+/* contactus.html Page - Social Media Styling*/
 .socialmedia{
     display: flex;
     justify-content: center;
