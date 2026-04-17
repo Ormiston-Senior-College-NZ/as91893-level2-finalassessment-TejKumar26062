@@ -39,7 +39,7 @@ p{
     }
 }
 
-.aboutusheading, #ourpurposeheading, .valuesheading, .menuheading, .openinghoursheading, .contactusheading, .allergensheading{
+.aboutusheading, #ourpurposeheading, .valuesheading, .menuheading, .openinghoursheading, .contactusheading, .allergensheading, .reservationsheading{
     text-align: center;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -145,6 +145,81 @@ p{
     left: 50%;
 }
 
+@media screen and (min-resolution: 1.8dppx) {
+  .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+    padding: 15px 40px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-resolution: 2.0dppx) {
+  .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+    padding: 15px 30px;
+    font-size: 20px;
+    gap: 10px;
+    }
+
+  .topnav{
+    height: 80px;
+    gap: 10px;
+    }
+}
+
+@media screen and (min-resolution: 3.0dppx) {
+  .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+    padding: 14px 10px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-resolution: 1.8dppx) {
+    #logo{
+        height: 70px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+    }
+    
+    #logo2{
+        height: 70px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-resolution: 2.0dppx) {
+    #logo{
+        height: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+    
+    #logo2{
+        height: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-resolution: 3.0dppx) {
+    #logo{
+        height: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+    
+    #logo2{
+        height: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+    }
+}
+
 .heroimg1{
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/Chef cooking at stov.png');
   background-size: cover;
@@ -226,6 +301,24 @@ p{
 }
 
 .herotext5{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: 'Cambria';
+}
+
+.heroimg6{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/reservationcompleteimg.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0 0;
+    padding: 78px 0px;
+    width: 100%;
+}
+
+.herotext6{
     text-align: center;
     align-content: center;
     color: white;
@@ -331,12 +424,28 @@ p{
     }
 }
 
+@media screen and (min-resolution: 3.0dppx) {
+    .valuesimages{
+        width: 120px;
+        margin: 10px;
+        justify-content: center;
+    }
+}
+
 @media screen and (min-resolution: 1.8dppx) {
     .values{
         margin-left: 70px;
         margin-right: 70px;
     }
 }
+
+@media screen and (min-resolution: 3.0dppx) {
+    .values{
+        justify-content: center;
+
+    }
+}
+
 
 .menuselection {
     display: flex;
@@ -381,54 +490,59 @@ p{
     font-family: 'Iosevka Charon';
 }
 
-.menutables{
-    border-collapse: collapse;
-    border: #000000 solid 2px;
-    font-size: 20px;
-    font-family: 'Iosevka Charon';
-    color: #523b11;
-    align-items: center;
-    margin: 10px auto;
-    width: 80%;
+.menugrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto;
 }
 
-.menutables th, .menutables td{
-    border: #000000 solid 2px;
-    padding: 10px;
+.menucard {
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
     text-align: center;
-    font-family: 'Trebuchet ms';
-    text-align: center;
-    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.menucard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menucard h3 {
+    margin: 10px 5px;
+    font-family: 'Iosevka Charon';
+}
+
+.menucard p {
+    font-size: 14px;
+    color: #523b11;
+    line-height: 1.4;
+}
+
+.menucard span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menucard:hover {
+    transform: scale(1.03);
 }
 
 @media screen and (min-resolution: 1.5dppx) {
-    .menutables{
-        width: 70%;
-        font-size: 16px;
-    }
-}
-
-@media screen and (min-resolution: 1.8dppx) {
-    .menutables{
-        width: 80%;
-        font-size: 16px;
-    }
-
-    .menuselectionlinks {
-        padding: 15px 35px;
-        font-size: 20px;
-    }
-
-    .menuselection {
-        gap: 11px;
-    }
-}
-
-@media screen and (min-resolution: 2.0dppx) {
-    .menutables{
-        width: 73%;
-        font-size: 15px;
+    .menugrid{
+        flex-wrap: wrap;
+        justify-items: center;
     }
 }
 
@@ -440,6 +554,22 @@ p{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     font-family: Arial, sans-serif;
+}
+
+.reservationsh2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    background: #eeeeee;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 600px;
+    font-family: 'Cambria';
+
 }
 
 .resheading {
@@ -466,7 +596,7 @@ input, select {
     border-radius: 5px;
 }
 
-button {
+#button {
     margin-top: 20px;
     padding: 12px;
     background-color: #007bff;
@@ -475,9 +605,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    text-decoration: none;
+    text-align: center;
 }
 
-button:hover {
+#button:hover {
     background-color: #0056b3;
 }
 
