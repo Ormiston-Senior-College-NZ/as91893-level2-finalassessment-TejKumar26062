@@ -59,7 +59,6 @@ h1, h2, h3, .topnav, .menucard h3 {
     font-size: 40px;
     background-color: #4D444B;
     color: #FFFFFF;
-    font-family: 'Iosevka Charon', serif;
 }
 
 /* Most <p> Styling */
@@ -88,7 +87,6 @@ h1, h2, h3, .topnav, .menucard h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1),
                 0 0 20px rgba(171, 171, 171, 0.6),
                 0 0 30px rgba(0, 0, 0, 0.5);  
-    font-family: 'Iosevka Charon';
     height: 100px;
     z-index: 1;
 }
@@ -132,24 +130,20 @@ h1, h2, h3, .topnav, .menucard h3 {
     display: block;
     width: auto;
     height: 90px;
-    justify-content: baseline;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
-    background-color: none;
 }
 
 #logo2{
     display: block;
     width: auto;
     height: 100px;
-    justify-content: baseline;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 25px;
-    background-color: none;
 }
 
 /* All Navigation Bar Styling - Changes for smaller devices*/
@@ -351,7 +345,6 @@ h1, h2, h3, .topnav, .menucard h3 {
     text-align: center;
     height: 90px;
     width: 100%;
-    font-family: 'Iosevka Charon';
 }
 
 /* Aboutus.html Page - About Us and Our Purpose Styling*/
@@ -482,7 +475,6 @@ h1, h2, h3, .topnav, .menucard h3 {
     font-size: 30px;
     background-color: #4D444B;
     color: #FFFFFF;
-    font-family: 'Iosevka Charon';
 }
 
 .menugrid {
@@ -516,7 +508,6 @@ h1, h2, h3, .topnav, .menucard h3 {
 
 .menucard h3 {
     margin: 10px 5px;
-    font-family: 'Iosevka Charon';
 }
 
 .menucard p {
@@ -629,7 +620,6 @@ input, select {
     border-collapse: collapse;
     border: #000000 solid 2px;
     font-size: 22px;
-    font-family: 'Iosevka Charon';
     color: #523b11;
     width: 80%;
 }
@@ -676,8 +666,6 @@ input, select {
     border: solid 2px #000000;
     border-radius: 6px;
     text-align: center;
-    transition: color(white) 0.2s ;
-    font-family: 'Iosevka Charon';
 }
 
 .contactusdetails strong{

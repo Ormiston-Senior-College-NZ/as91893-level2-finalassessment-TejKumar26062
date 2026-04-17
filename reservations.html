@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
-  <link rel="icon" type="icon" href="images/logo.png">
+<head> 
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
   <link rel="stylesheet" href="style.css">	
   <title>Reservations - OSC Dining 101</title>
 </head>
@@ -10,25 +10,25 @@
 <!-- Navigation Bar -->
 <div class="topnav">
 
-    <!-- OSC Dining Logo (left) -->
-	  <div class="logonav">
-      <a href="index.html">
-	      <img id="logo" src="images/logo.png" alt="Homepage">
-      </a>
-    </div>
+  <!-- OSC Dining Logo (left) -->
+	<div class="logonav">
+    <a href="index.html">
+	    <img id="logo" src="images/logo.png" alt="Homepage">
+    </a>
+  </div>
   
-    <!-- Navigation to Pages (middle) -->
-    <a href="aboutus.html">About us</a>
-    <a href="menu.html">Menu</a>
-    <a  class="activepage" href="reservations.html">Reservations</a>
-    <a href="contactus.html">Contact Us</a>
+  <!-- Navigation to Pages (middle) -->
+  <a href="aboutus.html">About us</a>
+  <a href="menu.html">Menu</a>
+  <a  class="activepage" href="reservations.html">Reservations</a>
+  <a href="contactus.html">Contact Us</a>
 
-    <!-- Ormiston Senior College logo (right) -->
-    <div class="logoright">
-      <a href="https://www.ormiston.school.nz/" alt="Ormiston Senior College">
-        <img id="logo2" src="images/Screenshot_2026-04-08_180725-removebg-preview.png" alt="Ormiston Senior College">
-      </a>
-    </div>
+  <!-- Ormiston Senior College logo (right) -->
+  <div class="logoright">
+    <a href="https://www.ormiston.school.nz/">
+      <img id="logo2" src="images/Screenshot_2026-04-08_180725-removebg-preview.png" alt="Ormiston Senior College">
+    </a>
+  </div>
 </div>
 
 <!-- Hero image -->
@@ -36,8 +36,8 @@
   
   <!-- Hero Text -->
   <div class="herotext4">
-        <h1>Where Hospitality Feels Like Home</h1>
-        <h3>OSC Dining 101</h3>
+    <h1>Where Hospitality Feels Like Home</h1>
+    <h2>OSC Dining 101</h2>
   </div>
 </div>
 
@@ -59,33 +59,36 @@
 
           <!-- Date for Reservation -->
           <label for="res_date">Date</label>
-            <select id="res_date" name="res_date">
+            <select id="res_date" name="res_date" required>
+              <option value="">--Please select a date--</option>
               <option value="03-04-2026">03-04-2026 (Friday 3rd April)</option>
               <option value="03-07-2026">03-07-2026 (Friday 7th July)</option>
               <option value="25-08-2026">25-08-2026 (Friday 25th August)</option>
               <option value="18-12-2026">18-12-2026 (Friday 18th December)</option>
             </select>
 
+          <!-- Time for Reservation -->
+          <label for="res_time">Time</label>
+            <select id="res_time" name="res_time" required>
+              <option value="">--Please select a time--</option>
+              <option>18:00</option>
+              <option>18:45</option>
+              <option>19:30</option>
+              <option>20:15</option>
+              <option>21:00</option>
+            </select>  
+
           <!-- Number of Guests for Reservation -->
           <label for="guests">Number of Guests</label>
-            <select id="guests" name="guests">
+            <select id="guests" name="guests" required>
+              <option value="">--Number of guests--</option>
               <option value="1">1 Person</option>
               <option value="2">2 People</option>
               <option value="3">3 People</option>
               <option value="4">4 People</option>
               <option value="5">5 People</option>
               <option value="6+">6+ People</option>
-            </select>
-
-          <!-- Time for Reservation -->
-          <label for="res_time">Time</label>
-            <select id="res_time" name="res_time" required>
-              <option>18:00</option>
-              <option>18:45</option>
-              <option>19:30</option>
-              <option>20:15</option>
-              <option>21:00</option>
-            </select>        
+            </select>      
         
           <!-- Contact Number for Reservation -->
           <label for="contactnumber">Contact Number</label>
@@ -98,7 +101,7 @@
           <!-- Dietary Restrictions for Reservation -->
           <!-- JavaScript Section - Dietary Restrictions-->
           <div class="dietary-group">
-            <label>Do you have dietary restrictions?<br>
+            <label>Do you have any dietary restrictions?<br>
             </label>
 
           <!-- Yes - Dietary Restrictions for Reservation -->
