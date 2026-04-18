@@ -309,6 +309,7 @@ h1, h2, h3, .topnav, .menucard h3 {
     color: #FFFFFF;
 }
 
+/* Menu cards */
 .menugrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -359,7 +360,7 @@ h1, h2, h3, .topnav, .menucard h3 {
     transform: scale(1.03);
 }
 
-/*  reservations.html Page Styling*/
+/* reservations.html Page Styling*/
 .reservation-container {
     max-width: 400px;
     margin: 50px auto;
