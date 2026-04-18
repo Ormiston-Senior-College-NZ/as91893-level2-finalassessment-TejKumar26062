@@ -30,19 +30,6 @@ h1, h2, h3, .topnav, .menucard h3 {
     cursor: pointer;
 }
 
-/* Back to Top Arrow Styling - Changes for smaller devices*/
-@media screen and (max-width: 1024px) {
-    .backtotoparrow{
-        height: 40px;
-    }
-}
-
-@media screen and (max-width: 712px) {
-    .backtotoparrow{
-        height: 20px;
-    }
-}
-
 /* All Main Heading Styling */
 .aboutusheading, #ourpurposeheading, .valuesheading, .menuheading, .openinghoursheading, .contactusheading, .allergensheading, .reservationsheading{
     text-align: center;
@@ -139,82 +126,6 @@ h1, h2, h3, .topnav, .menucard h3 {
     padding-bottom: 10px;
     padding-right: 25px;
 }
-
-/* All Navigation Bar Styling - Changes for smaller devices*/
-
-@media screen and (max-width: 1024px){
-    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-    padding: 15px 30px;
-    font-size: 20px;
-    gap: 10px;
-    }
-
-    .topnav{
-    height: 80px;
-    gap: 10px;
-    }
-}
-
-@media screen and (max-width: 712px) {
-    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-        padding: 12px 12px;
-        font-size: 14px;
-    }
-
-    .topnav{
-        height: 70px;
-        gap: 4px;
-    }
-}
-
-@media screen and (max-width: 512px) {
-    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-        padding: 10px 8px;
-        font-size: 12px;
-    }
-
-    .topnav{
-        height: 70px;
-        gap: 4px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    #logo{
-        height: 60px;
-        padding-left: 10px;
-    }
-    
-    #logo2{
-        height: 60px;
-        padding-right: 10px;
-    }
-}
-
-@media screen and (max-width:712px) {
-    #logo{
-        height: 40px;
-        padding-left: 8px;
-    }
-    
-    #logo2{
-        height: 40px;
-        padding-right: 8px;
-    }
-}
-
-@media screen and (max-width: 512px) {
-    #logo{
-        height: 30px;
-        padding-left: 6px;
-    }
-    
-    #logo2{
-        height: 30px;
-        padding-right: 6px;
-    }
-}
-
 
 /* Hero Images Styling*/
 .heroimg1{
@@ -337,31 +248,6 @@ h1, h2, h3, .topnav, .menucard h3 {
     flex-wrap: wrap;
 }
 
-/*  Aboutus.html Page - About Us and Our Purpose - Changes for smaller devices*/
-@media screen and (max-width: 1024px) {
-    .aboutusandourpurpose{
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .aboutusandourpurposep{
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 1024x) {
-    .aboutusandourpurposeimg{
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 512px) {
-    .aboutusandourpurposeimg{
-        width: 300px;
-    }
-}
-
 /* Aboutus.html Page - Values Styling*/
 .values{
     display: grid;
@@ -378,35 +264,6 @@ h1, h2, h3, .topnav, .menucard h3 {
     padding: 10px;
     margin-left: 100px;
     margin-right: 100px;
-}
-
-/*  Aboutus.html Page - Values - Changes for smaller devices*/
-@media screen and (max-width: 1024px) {
-    .valuesimages{
-        width: 150px;
-        margin: 10px;
-    }
-}
-
-@media screen and (max-width: 512px) {
-    .valuesimages{
-        width: 120px;
-        margin: 10px;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .values{
-        margin-left: 70px;
-        margin-right: 70px;
-    }
-}
-
-@media screen and (max-width: 512px) {
-    .values{
-        justify-content: center;
-    }
 }
 
 /*  Menu.html Page Styling*/
@@ -606,13 +463,6 @@ input, select {
     font-family: 'Trebuchet ms';
 }
 
-/* contactus.html Page - Opening Hours - Changes for smaller devices*/
-@media screen and (max-width: 1024px) {
-    .openinghours{
-        grid-template-columns: 1fr;
-    }
-}
-
 /* contactus.html - Contact us Page Styling*/
 .contactus{
     display: flex;
@@ -657,14 +507,6 @@ input, select {
     text-decoration: none;
 }
 
-/* contactus.html Page - Contact Us - Changes for smaller devices*/
-@media screen and (max-width: 1024px) {
-    .contactus{ 
-        flex-wrap: wrap;
-        justify-items: center;
-    }
-}
-
 /* contactus.html Page - Google Maps Styling*/
 .googlemaps{
     display:flex;
@@ -692,4 +534,141 @@ input, select {
 
 .socialmediaicons:hover{
     transform: scale(1.20);
+}
+
+/* ----- Changes for Smaller Devices - 1024px ----- */
+@media screen and (max-width: 1024px) { 
+
+    /* Back to Top Arrow */
+    .backtotoparrow{
+        height: 40px;
+    }
+
+    /* Navigation Bar */
+    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+    padding: 15px 30px;
+    font-size: 20px;
+    gap: 10px;
+    }
+
+    .topnav{
+    height: 80px;
+    gap: 10px;
+    }
+
+    #logo{
+        height: 60px;
+        padding-left: 10px;
+    }
+    
+    #logo2{
+        height: 60px;
+        padding-right: 10px;
+    }
+
+    /*  Aboutus.html Page - About Us and Our Purpose */
+    .aboutusandourpurpose{
+        grid-template-columns: 1fr;
+    }
+
+    .aboutusandourpurposeimg{
+    width: 400px;
+    }
+
+    .aboutusandourpurposep{
+    font-size: 15px;
+    }
+
+    /*  Aboutus.html Page - Values */
+    .valuesimages{
+        width: 150px;
+        margin: 10px;
+    }
+
+    .values{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    /* contactus.html Page - Opening Hours */
+    .openinghours{
+        grid-template-columns: 1fr;
+    }
+
+    /* contactus.html Page - Contact Us */
+    .contactus{ 
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+}
+
+/* ----- Changes for Smaller Devices - 712px ----- */
+@media screen and (max-width: 712px) {
+
+    /* Back to Top Arrow */
+    .backtotoparrow{
+    height: 20px;
+    }
+
+    /* Navigation Bar */
+    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+        padding: 12px 12px;
+        font-size: 14px;
+    }
+
+    .topnav{
+        height: 70px;
+        gap: 4px;
+    }
+
+    #logo{
+    height: 40px;
+    padding-left: 8px;
+    }
+    
+    #logo2{
+    height: 40px;
+    padding-right: 8px;
+    }
+}
+
+/* ----- Changes for Smaller Devices - 512px ----- */
+@media screen and (max-width: 512px) {
+
+    /* Navigation Bar */
+    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .topnav{
+        height: 70px;
+        gap: 4px;
+    }
+
+    #logo{
+    height: 30px;
+    padding-left: 6px;
+    }
+    
+    #logo2{
+    height: 30px;
+    padding-right: 6px;
+    }
+
+    /*  Aboutus.html Page - About Us and Our Purpose */
+    .aboutusandourpurposeimg{
+        width: 300px;
+    }
+
+    /*  Aboutus.html Page - Values */
+    .valuesimages{
+        width: 120px;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .values{
+        justify-content: center;
+    }
 }
