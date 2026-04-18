@@ -187,13 +187,13 @@ h1, h2, h3, .topnav, .menucard h3 {
     }
 
     .topnav{
-        gap: 5px;
+        gap: 10px;
     }
 }
 
 @media screen and (min-resolution: 4.0dppx) {
     .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-        padding: 12px 5px;
+        padding: 12px 8px;
         font-size: 14px;
     }
 
@@ -205,7 +205,7 @@ h1, h2, h3, .topnav, .menucard h3 {
 
 @media screen and (min-resolution: 5.0dppx) {
     .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-        padding: 4px 4px;
+        padding: 4px 8px;
         font-size: 9px;
     }
 
@@ -278,22 +278,6 @@ h1, h2, h3, .topnav, .menucard h3 {
     }
 }
 
-@media screen and (min-resolution: 4.0dppx) {
-    #logo{
-        height: 30px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-    }
-    
-    #logo2{
-        height: 30px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 5px;
-    }
-}
-
 @media screen and (min-resolution: 5.0dppx) {
     #logo{
         height: 25px;
@@ -312,13 +296,12 @@ h1, h2, h3, .topnav, .menucard h3 {
 
 /* Hero Images Styling*/
 .heroimg1{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/Chef cooking at stov.png');
-  background-size: cover;
-  background-position: center;
-  margin: 0 0;
-  padding: 78px 0px;
-  width: 100%;
-  height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/Chef cooking at stov.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0 0;
+    padding: 100px 0px;
+    width: 100%;
 }
 
 .heroimg2{
@@ -326,7 +309,7 @@ h1, h2, h3, .topnav, .menucard h3 {
     background-size: cover;
     background-position: center;
     margin: 0 0;
-    padding: 78px 0px;
+    padding: 103px 0px;
     width: 100%;
 }
 
@@ -335,7 +318,7 @@ h1, h2, h3, .topnav, .menucard h3 {
     background-size: cover;
     background-position: center;
     margin: 0 0;
-    padding: 78px 0px;
+    padding: 103px 0px;
     width: 100%;
 }
 
@@ -344,7 +327,7 @@ h1, h2, h3, .topnav, .menucard h3 {
     background-size: cover;
     background-position: center;
     margin: 0 0;
-    padding: 78px 0px;
+    padding: 103px 0px;
     width: 100%;
 }
 
@@ -353,7 +336,7 @@ h1, h2, h3, .topnav, .menucard h3 {
     background-size: cover;
     background-position: center;
     margin: 0 0;
-    padding: 78px 0px;
+    padding: 103px 0px;
     width: 100%;
 }
 
@@ -362,7 +345,7 @@ h1, h2, h3, .topnav, .menucard h3 {
     background-size: cover;
     background-position: center;
     margin: 0 0;
-    padding: 78px 0px;
+    padding: 103px 0px;
     width: 100%;
 }
 
@@ -372,7 +355,7 @@ h1, h2, h3, .topnav, .menucard h3 {
     align-content: center;
     color: white;
     padding-top: 50px;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 /* Index.html Buttons Styling*/
@@ -408,7 +391,7 @@ h1, h2, h3, .topnav, .menucard h3 {
     background-color: #000000;
     color: white;
     text-align: center;
-    height: 90px;
+    padding: 40px 0px;    
     width: 100%;
 }
 
@@ -744,7 +727,6 @@ input, select {
 }
 
 .contactusdetails a{
-    word-break: break-word;
     text-decoration: none;
 }
 
