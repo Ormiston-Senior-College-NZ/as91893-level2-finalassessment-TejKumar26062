@@ -37,7 +37,7 @@ h1, h2, h3, .topnav, .menucard h3 {
     }
 }
 
-@media screen and (min-resolution: 1.9dppx) {
+@media screen and (min-resolution: 2.0dppx) {
     .backtotoparrow{
         height: 50px;
     }
@@ -46,6 +46,12 @@ h1, h2, h3, .topnav, .menucard h3 {
 @media screen and (min-resolution: 2.5dppx) {
     .backtotoparrow{
         height: 40px;
+    }
+}
+
+@media screen and (min-resolution: 4.0dppx) {
+    .backtotoparrow{
+        height: 20px;
     }
 }
 
@@ -147,7 +153,7 @@ h1, h2, h3, .topnav, .menucard h3 {
 }
 
 /* All Navigation Bar Styling - Changes for smaller devices*/
-@media screen and (min-resolution: 1.8dppx) {
+@media screen and (min-resolution: 1.5dppx) {
   .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
     padding: 15px 40px;
     font-size: 22px;
@@ -155,33 +161,60 @@ h1, h2, h3, .topnav, .menucard h3 {
 }
 
 @media screen and (min-resolution: 2.0dppx) {
-  .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
     padding: 15px 30px;
     font-size: 20px;
     gap: 10px;
     }
 
-  .topnav{
+    .topnav{
     height: 80px;
     gap: 10px;
     }
 }
 
 @media screen and (min-resolution: 3.0dppx) {
-  .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-    padding: 14px 10px;
-    font-size: 20px;
+    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+      padding: 14px 10px;
+      font-size: 20px;
   }
 }
 
 @media screen and (min-resolution: 3.5dppx) {
-  .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-    padding: 14px 8px;
-    font-size: 18px;
-  }
+    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+        padding: 14px 8px;
+        font-size: 18px;
+    }
+
+    .topnav{
+        gap: 5px;
+    }
 }
 
-@media screen and (min-resolution: 1.8dppx) {
+@media screen and (min-resolution: 4.0dppx) {
+    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+        padding: 12px 5px;
+        font-size: 14px;
+    }
+
+    .topnav{
+        height: 70px;
+        gap: 4px;
+    }
+}
+
+@media screen and (min-resolution: 5.0dppx) {
+    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
+        padding: 4px 4px;
+        font-size: 9px;
+    }
+
+    .topnav{
+        height: 60px;
+    }
+}
+
+@media screen and (min-resolution: 1.5dppx) {
     #logo{
         height: 70px;
         padding-top: 5px;
@@ -242,6 +275,38 @@ h1, h2, h3, .topnav, .menucard h3 {
         padding-top: 5px;
         padding-bottom: 5px;
         padding-right: 8px;
+    }
+}
+
+@media screen and (min-resolution: 4.0dppx) {
+    #logo{
+        height: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+    
+    #logo2{
+        height: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (min-resolution: 5.0dppx) {
+    #logo{
+        height: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 2px;
+    }
+    
+    #logo2{
+        height: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 2px;
     }
 }
 
