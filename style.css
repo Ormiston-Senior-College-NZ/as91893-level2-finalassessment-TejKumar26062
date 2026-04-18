@@ -31,25 +31,13 @@ h1, h2, h3, .topnav, .menucard h3 {
 }
 
 /* Back to Top Arrow Styling - Changes for smaller devices*/
-@media screen and (min-resolution: 1.5dppx) {
-    .backtotoparrow{
-        height: 60px;
-    }
-}
-
-@media screen and (min-resolution: 2.0dppx) {
-    .backtotoparrow{
-        height: 50px;
-    }
-}
-
-@media screen and (min-resolution: 2.5dppx) {
+@media screen and (max-width: 1024px) {
     .backtotoparrow{
         height: 40px;
     }
 }
 
-@media screen and (min-resolution: 4.0dppx) {
+@media screen and (max-width: 712px) {
     .backtotoparrow{
         height: 20px;
     }
@@ -153,14 +141,8 @@ h1, h2, h3, .topnav, .menucard h3 {
 }
 
 /* All Navigation Bar Styling - Changes for smaller devices*/
-@media screen and (min-resolution: 1.5dppx) {
-  .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-    padding: 15px 40px;
-    font-size: 22px;
-  }
-}
 
-@media screen and (min-resolution: 2.0dppx) {
+@media screen and (max-width: 1024px){
     .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
     padding: 15px 30px;
     font-size: 20px;
@@ -173,27 +155,9 @@ h1, h2, h3, .topnav, .menucard h3 {
     }
 }
 
-@media screen and (min-resolution: 3.0dppx) {
+@media screen and (max-width: 712px) {
     .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-      padding: 14px 10px;
-      font-size: 20px;
-  }
-}
-
-@media screen and (min-resolution: 3.5dppx) {
-    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-        padding: 14px 8px;
-        font-size: 18px;
-    }
-
-    .topnav{
-        gap: 10px;
-    }
-}
-
-@media screen and (min-resolution: 4.0dppx) {
-    .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-        padding: 12px 8px;
+        padding: 12px 12px;
         font-size: 14px;
     }
 
@@ -203,96 +167,54 @@ h1, h2, h3, .topnav, .menucard h3 {
     }
 }
 
-@media screen and (min-resolution: 5.0dppx) {
+@media screen and (max-width: 512px) {
     .topnav a[href="aboutus.html"], .topnav a[href="menu.html"], .topnav a[href="reservations.html"], .topnav a[href="contactus.html"]{
-        padding: 4px 8px;
-        font-size: 9px;
+        padding: 10px 8px;
+        font-size: 12px;
     }
 
     .topnav{
-        height: 60px;
+        height: 70px;
+        gap: 4px;
     }
 }
 
-@media screen and (min-resolution: 1.5dppx) {
-    #logo{
-        height: 70px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 15px;
-    }
-    
-    #logo2{
-        height: 70px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 15px;
-    }
-}
-
-@media screen and (min-resolution: 2.0dppx) {
+@media screen and (max-width: 1024px) {
     #logo{
         height: 60px;
-        padding-top: 5px;
-        padding-bottom: 5px;
         padding-left: 10px;
     }
     
     #logo2{
         height: 60px;
-        padding-top: 5px;
-        padding-bottom: 5px;
         padding-right: 10px;
     }
 }
 
-@media screen and (min-resolution: 3.0dppx) {
-    #logo{
-        height: 50px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-    }
-    
-    #logo2{
-        height: 50px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 10px;
-    }
-}
-
-@media screen and (min-resolution: 3.5dppx) {
+@media screen and (max-width:712px) {
     #logo{
         height: 40px;
-        padding-top: 5px;
-        padding-bottom: 5px;
         padding-left: 8px;
     }
     
     #logo2{
         height: 40px;
-        padding-top: 5px;
-        padding-bottom: 5px;
         padding-right: 8px;
     }
 }
 
-@media screen and (min-resolution: 5.0dppx) {
+@media screen and (max-width: 512px) {
     #logo{
-        height: 25px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 2px;
+        height: 30px;
+        padding-left: 6px;
     }
     
     #logo2{
-        height: 25px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 2px;
+        height: 30px;
+        padding-right: 6px;
     }
 }
+
 
 /* Hero Images Styling*/
 .heroimg1{
@@ -416,21 +338,27 @@ h1, h2, h3, .topnav, .menucard h3 {
 }
 
 /*  Aboutus.html Page - About Us and Our Purpose - Changes for smaller devices*/
-@media screen and (min-resolution: 1.8dppx) {
+@media screen and (max-width: 1024px) {
     .aboutusandourpurpose{
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (min-resolution: 1.4dppx) {
+@media screen and (max-width: 1024px) {
     .aboutusandourpurposep{
         font-size: 15px;
     }
 }
 
-@media screen and (min-resolution: 1.4dppx) {
+@media screen and (max-width: 1024x) {
     .aboutusandourpurposeimg{
         width: 400px;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .aboutusandourpurposeimg{
+        width: 300px;
     }
 }
 
@@ -453,14 +381,14 @@ h1, h2, h3, .topnav, .menucard h3 {
 }
 
 /*  Aboutus.html Page - Values - Changes for smaller devices*/
-@media screen and (min-resolution: 1.5dppx) {
+@media screen and (max-width: 1024px) {
     .valuesimages{
         width: 150px;
         margin: 10px;
     }
 }
 
-@media screen and (min-resolution: 3.0dppx) {
+@media screen and (max-width: 512px) {
     .valuesimages{
         width: 120px;
         margin: 10px;
@@ -468,17 +396,16 @@ h1, h2, h3, .topnav, .menucard h3 {
     }
 }
 
-@media screen and (min-resolution: 1.8dppx) {
+@media screen and (max-width: 1024px) {
     .values{
         margin-left: 70px;
         margin-right: 70px;
     }
 }
 
-@media screen and (min-resolution: 3.0dppx) {
+@media screen and (max-width: 512px) {
     .values{
         justify-content: center;
-
     }
 }
 
@@ -680,7 +607,7 @@ input, select {
 }
 
 /* contactus.html Page - Opening Hours - Changes for smaller devices*/
-@media screen and (min-resolution: 1.8dppx) {
+@media screen and (max-width: 1024px) {
     .openinghours{
         grid-template-columns: 1fr;
     }
@@ -731,7 +658,7 @@ input, select {
 }
 
 /* contactus.html Page - Contact Us - Changes for smaller devices*/
-@media screen and (min-resolution: 1.8dppx) {
+@media screen and (max-width: 1024px) {
     .contactus{ 
         flex-wrap: wrap;
         justify-items: center;
